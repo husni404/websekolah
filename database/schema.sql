@@ -2,7 +2,7 @@
 -- Engine: MySQL / MariaDB (XAMPP)
 -- Charset: utf8mb4
 
-CREATE DATABASE IF NOT EXISTS smky8462_webpertama
+CREATE DATABASE IF NOT EXISTS indb
   CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
@@ -86,4 +86,5 @@ CREATE TABLE IF NOT EXISTS konten (
 CREATE INDEX idx_siswa_id_kelas ON siswa(id_kelas);
 CREATE INDEX idx_konten_tipe_tgl ON konten(tipe, tgl_upload);
 CREATE INDEX idx_konten_reel ON konten(is_reel);
+
 
