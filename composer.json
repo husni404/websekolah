@@ -1,0 +1,16 @@
+{
+  "name": "smk-madani/websekolah",
+  "description": "Portal web SMK Madani dengan vibes Gen Z, admin dashboard, dan import Excel siswa.",
+  "type": "project",
+  "require": {
+    "php": ">=8.1",
+    "ext-pdo": "*",
+    "phpoffice/phpspreadsheet": "^5.4"
+  },
+  "autoload": {
+    "files": [
+      "app/init.php"
+    ]
+  }
+}
+
