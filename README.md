@@ -1,4 +1,4 @@
-## SMK Madani Websekolah (Gen Z Vibes)
+## Websekolah (Gen Z Vibes)
 
 Portal web SMK dengan tampilan neobrutal/glassmorphism, landing estetik untuk siswa/orang tua, plus admin dashboard untuk kelola data dan fitur unggulan **Import Excel siswa**.
 
@@ -14,9 +14,6 @@ Portal web SMK dengan tampilan neobrutal/glassmorphism, landing estetik untuk si
 2. Import file:
    - `database/schema.sql`
    - (opsional, tapi disarankan) `database/alter_add_sekolah_settings.sql` untuk tabel identitas sekolah.
-3. Ini akan membuat database `smk_madani` dengan tabel:
-   - `users`, `siswa`, `guru`, `kelas`, `konten`.
-   - `sekolah_settings` (identitas sekolah, logo, lokasi).
 
 ### 3. Install Dependency (PhpSpreadsheet)
 
@@ -100,13 +97,9 @@ Setelah login berhasil:
   - Prepared statement (PDO) untuk query.
   - CSRF token di semua form penting (login, CRUD, import).
   - Guard `require_admin()` untuk semua route `/admin/*` kecuali login.
+ 
+### 9. Hubungi Pengembang
 
-### 9. Siap Upload ke Hosting
+0853-2187-8409 (PAK HUS)
 
-- File `.htaccess` sudah menggunakan `RewriteBase /` sehingga bisa dipasang di root domain seperti `smkmadanicianjur.sch.id`.
-- Pastikan di hosting:
-  - PHP versi **8.1+** dan ekstensi `pdo_mysql` aktif.
-  - Import `database/schema.sql` dan `database/alter_add_sekolah_settings.sql` ke database MySQL hosting.
-  - Sesuaikan kredensial DB di `config/config.php` (host, nama DB, user, password).
-  - Folder `storage/*` memiliki permission tulis (untuk upload logo dan konten).
 
